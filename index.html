@@ -21,70 +21,70 @@
     <main>
       <section class="calculator">
         <div class="container">
-          <!-- FORM START HERE (?) -->
-          <div class="amount">
-            <label for="bill-amount">Bill</label>
-            <input id="bill-amount" />
-          </div>
-          <div class="tip__container">
-            <fieldset>
-              <legend>Select Tip %</legend>
-              <div>
-                <input type="radio" id="5" name="fivePercent" value="5" />
-                <label for="5">5%</label>
-              </div>
-              <div>
-                <input type="radio" id="10" name="tenPercent" value="10" />
-                <label for="10">10%</label>
-              </div>
-              <div>
-                <input type="radio" id="20" name="twentyPercent" value="20" />
-                <label for="20">20%</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="25"
-                  name="twentyfivePercent"
-                  value="25"
-                />
-                <label for="25">25%</label>
-              </div>
-              <div>
-                <input type="radio" id="50" name="fiftyPercent" value="50" />
-                <label for="50">50%</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="custom"
-                  name="customPercent"
-                  value="custom"
-                />
-                <label for="custom">Custom</label>
-              </div>
-            </fieldset>
-          </div>
-          <div class="num__people">
-            <label for="num-people">Number of People</label>
-            <input id="num-people" />
-          </div>
-
-          <div class="tip__summary">
-            <div class="tip__summary__amount">
-              <p>
-                Tip Amount<span><br />/ person</span>
-              </p>
-              <p class="tip__amount">$4.27</p>
+          <form action="" class="form__tip-calculator">
+            <p class="bill__amount">
+              <label for="bill-input">Bill</label>
+              <input id="bill-input" />
+            </p>
+            <p class="tip__container">
+              <fieldset>
+                <legend>Select Tip %</legend>
+                <p>
+                  <input type="radio" id="5" name="fivePercent" value="5" />
+                  <label for="5">5%</label>
+                </p>
+                <p>
+                  <input type="radio" id="10" name="tenPercent" value="10" />
+                  <label for="10">10%</label>
+                </p>
+                <p>
+                  <input type="radio" id="20" name="twentyPercent" value="20" />
+                  <label for="20">20%</label>
+                </p>
+                <p>
+                  <input
+                    type="radio"
+                    id="25"
+                    name="twentyfivePercent"
+                    value="25"
+                  />
+                  <label for="25">25%</label>
+                </p>
+                <p>
+                  <input type="radio" id="50" name="fiftyPercent" value="50" />
+                  <label for="50">50%</label>
+                </p>
+                <p>
+                  <input
+                    type="radio"
+                    id="custom"
+                    name="customPercent"
+                    value="custom"
+                  />
+                  <label for="custom">Custom</label>
+                </p>
+              </fieldset>
+            </p>
+            <div class="num__people">
+              <label for="num-people">Number of People</label>
+              <input id="num-people" />
             </div>
-            <div class="tip__summary__total">
-              <p>
-                Total<span><br />/ person</span>
-              </p>
-              <p class="tip__total">$4.27</p>
+            <div class="tip__summary">
+              <div class="tip__summary__amount">
+                <p>
+                  Tip Amount<span><br />/ person</span>
+                </p>
+                <p class="tip__amount">$4.27</p>
+              </div>
+              <div class="tip__summary__total">
+                <p>
+                  Total<span><br />/ person</span>
+                </p>
+                <p class="tip__total">$4.27</p>
+              </div>
+              <button type="reset" class="form__reset_btn">Reset</button>
             </div>
-            <button>Reset</button>
-          </div>
+          </form>
         </div>
       </section>
     </main>
