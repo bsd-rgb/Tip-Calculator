@@ -18,6 +18,10 @@
 
 /* Variables */
 
+:root {
+  --BGCOLOR: #c5e4e7;
+}
+
 /* CSS RESET */
 *,
 *::before,
@@ -70,4 +74,25 @@ html {
 /* GENERAL STYLES */
 body {
   font-family: 'Space Mono', sans-serif;
+  background-color: var(--BGCOLOR);
+}
+
+header {
+  text-align: center;
+}
+
+.calculator {
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  /* width: 50%;
+  background-color: lightblue; */
+}
+
+.label__header {
+  color: #5e7a7d;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
