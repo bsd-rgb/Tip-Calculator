@@ -20,6 +20,8 @@
 
 :root {
   --BGCOLOR: #c5e4e7;
+  --BGCOLOR-INPUT: #f3f9fa;
+  --FONT-COLOR-LABEL: #5e7a7d;
 }
 
 /* CSS RESET */
@@ -83,6 +85,7 @@ header {
 
 .calculator {
   background-color: #fff;
+  text-align: center;
 }
 
 .container {
@@ -91,8 +94,21 @@ header {
   background-color: lightblue; */
 }
 
+/* FORM STYLING */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .label__header {
-  color: #5e7a7d;
   font-size: 1.3rem;
   font-weight: 700;
+  color: var(--FONT-COLOR-LABEL);
+  margin: 0 auto;
+}
+
+input {
+  background-color: var(--BGCOLOR-INPUT);
+  padding: 0.5em 2em;
 }
