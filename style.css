@@ -22,6 +22,7 @@
   --BGCOLOR: #c5e4e7;
   --BGCOLOR-INPUT: #f3f9fa;
   --FONT-COLOR-LABEL: #5e7a7d;
+  --FONT-COLOR-HEADER: #3d6666;
 }
 
 /* CSS RESET */
@@ -81,6 +82,11 @@ body {
 
 header {
   text-align: center;
+  color: var(--FONT-COLOR-HEADER);
+
+  font-size: 1.3rem;
+  line-height: 1.5;
+  letter-spacing: 1rem;
 }
 
 .calculator {
@@ -107,10 +113,12 @@ header {
   margin-bottom: 1.2rem;
 }
 .label__header {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--FONT-COLOR-LABEL);
 }
+
+/* Inputs */
 
 input {
   background-color: var(--BGCOLOR-INPUT);
