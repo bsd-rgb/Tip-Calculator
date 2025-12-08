@@ -80,13 +80,13 @@ body {
   background-color: var(--BGCOLOR);
 }
 
-header {
-  text-align: center;
+h1 {
   color: var(--FONT-COLOR-HEADER);
-
-  font-size: 1.3rem;
-  line-height: 1.5;
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 3rem;
   letter-spacing: 1rem;
+  margin: 2.4rem auto;
 }
 
 .calculator {
