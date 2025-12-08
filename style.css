@@ -122,9 +122,21 @@ h1 {
 
 input {
   background-color: var(--BGCOLOR-INPUT);
-  padding: 1.5em 2em;
+  padding: 0.5rem 2rem;
   border-radius: 4px;
   width: 100%;
+  outline: none;
+  text-indent: 1rem;
+  cursor: pointer;
+  /* Input font */
+  font-size: 2.4rem;
+  text-align: end;
+  color: #00474b;
+  font-weight: 700;
+}
+
+input:focus {
+  border: solid 2px #26c2ae;
 }
 
 .form__input {
