@@ -122,7 +122,17 @@ h1 {
 
 input {
   background-color: var(--BGCOLOR-INPUT);
-  padding: 0.5em 2em;
+  padding: 1.5em 2em;
   border-radius: 4px;
   width: 100%;
+}
+
+.form__input {
+  position: relative;
+}
+
+.label__icon {
+  position: absolute;
+  top: 33%;
+  left: 3%;
 }
