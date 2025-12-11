@@ -120,7 +120,7 @@ h1 {
 
 /* Inputs */
 
-input {
+.form__input input {
   background-color: var(--BGCOLOR-INPUT);
   padding: 0.5rem 2rem;
   border-radius: 4px;
@@ -139,6 +139,10 @@ input:focus {
   border: solid 2px #26c2ae;
 }
 
+input[type='radio'] {
+  appearance: none;
+}
+
 .form__input {
   position: relative;
 }
@@ -147,4 +151,32 @@ input:focus {
   position: absolute;
   top: 33%;
   left: 3%;
+}
+
+.radio-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  column-gap: 1.6rem;
+}
+.radio__input {
+  width: 100%;
+}
+
+.radio__label {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #fff;
+  background-color: #00474b;
+  padding: 0.75rem 0rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 9px;
+}
+
+.radio__label-custom {
+  background-color: #f3f9fa;
+  color: #5e7a7d;
 }
