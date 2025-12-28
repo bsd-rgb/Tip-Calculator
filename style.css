@@ -86,12 +86,13 @@ h1 {
   font-size: 2.4rem;
   line-height: 3rem;
   letter-spacing: 1rem;
-  margin: 2.4rem auto;
+  margin: 3.2rem auto;
 }
 
 .calculator {
   background-color: #fff;
-  padding-top: 1em;
+  padding: 1em 0;
+  border-radius: 2.4rem 2.4rem 0 0;
 }
 
 .container {
@@ -110,7 +111,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 3.2rem;
 }
 .label__header {
   font-size: 1.6rem;
@@ -179,4 +180,47 @@ input[type='radio'] {
 .radio__label-custom {
   background-color: #f3f9fa;
   color: #5e7a7d;
+}
+
+/* Form Summary / Reset */
+
+.form-group__summary {
+  padding: 3.2rem;
+  /* ADD COLOR VARIABLE */
+  background-color: #00474b;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  border-radius: 2rem;
+}
+
+.person-tag {
+  font-size: 1.3rem;
+  color: #5e7a7d;
+}
+
+.tip__summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2.4rem;
+}
+
+.tip__value {
+  margin-left: auto;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  /* ADD COLOR VARIABLE */
+  color: #26c2ae;
+}
+
+.form__reset_btn {
+  font-size: 2rem;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  /* ADD COLOR VARIABLE */
+  background-color: #0d686d;
+  color: #085c61;
+
+  border-radius: 0.5rem;
 }
