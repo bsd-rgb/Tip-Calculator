@@ -23,6 +23,7 @@
   --BGCOLOR-INPUT: #f3f9fa;
   --FONT-COLOR-LABEL: #5e7a7d;
   --FONT-COLOR-HEADER: #3d6666;
+  --BTN-SELECTED: #26c2ae;
 }
 
 /* CSS RESET */
@@ -142,6 +143,7 @@ input:focus {
 
 input[type='radio'] {
   appearance: none;
+  opacity: 0;
 }
 
 .form__input {
@@ -177,11 +179,16 @@ input[type='radio'] {
   border-radius: 9px;
 }
 
+.radio__input input:checked + label {
+  /* UPDATE BACKGROUND COLOR */
+  background-color: var(--BTN-SELECTED);
+  color: #085c61;
+}
+
 .radio__label-custom {
   background-color: #f3f9fa;
   color: #5e7a7d;
 }
-
 /* Form Summary / Reset */
 
 .form-group__summary {
@@ -219,8 +226,28 @@ input[type='radio'] {
   padding: 0.5em 0;
   text-transform: uppercase;
   /* ADD COLOR VARIABLE */
-  background-color: #0d686d;
+  background-color: #26c2ae;
   color: #085c61;
 
   border-radius: 0.5rem;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 3.6rem;
+  color: var(--FONT-COLOR-HEADER);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 600px) {
+  .calculator {
+    max-width: 65rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* TODO: Desktop Styling */
 }
