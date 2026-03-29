@@ -207,13 +207,14 @@ input[type='radio'] {
   color: #5e7a7d;
 }
 
-.tip__summary {
+.bill__summary {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 2.4rem;
 }
 
-.tip__value {
+.tip__value,
+.total__value {
   margin-left: auto;
   font-size: 3.2rem;
   line-height: 3.6rem;
@@ -249,5 +250,8 @@ input[type='radio'] {
 }
 
 @media (min-width: 1200px) {
-  /* TODO: Desktop Styling */
+  .form__tip-calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
