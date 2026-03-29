@@ -176,7 +176,7 @@ input[type='radio'] {
   padding: 0.75rem 0rem;
   display: flex;
   justify-content: center;
-  border-radius: 9px;
+  border-radius: 5px;
 }
 
 .radio__input input:checked + label {
@@ -250,8 +250,31 @@ input[type='radio'] {
 }
 
 @media (min-width: 1200px) {
+  .calculator {
+    max-width: 90rem;
+    padding: 1em 1.2em;
+  }
+
+  .container {
+    width: 95%;
+  }
+
   .form__tip-calculator {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+  }
+
+  .radio-group {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tip__value,
+  .total__value {
+    font-size: 4.8rem;
+  }
+
+  .form__reset_btn {
+    margin-top: auto;
   }
 }
