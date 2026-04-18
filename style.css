@@ -233,26 +233,40 @@ input[type='radio'] {
   border-radius: 0.5rem;
 }
 
+/* VALIDATION STYLING */
+
+input:invalid {
+  border: 1px solid red;
+}
+
+/* FOOTER */
 .attribution {
   text-align: center;
   font-size: 1.4rem;
-  margin-top: 3.6rem;
+  margin-top: 15rem;
   color: var(--FONT-COLOR-HEADER);
 }
 
 /* MEDIA QUERIES */
 
+/* TABLET */
 @media (min-width: 600px) {
   .calculator {
     max-width: 65rem;
     margin: 0 auto;
   }
+
+  .calculator {
+    box-shadow: 5px 20px 25px 10px rgba(38, 194, 174, 0.1);
+  }
 }
 
+/* DESKTOP */
 @media (min-width: 1200px) {
   .calculator {
     max-width: 90rem;
     padding: 1em 1.2em;
+    border-radius: 2.4rem;
   }
 
   .container {
