@@ -24,6 +24,7 @@
   --FONT-COLOR-LABEL: #5e7a7d;
   --FONT-COLOR-HEADER: #3d6666;
   --BTN-SELECTED: #26c2ae;
+  --COLOR-INVALID: #e17052;
 }
 
 /* CSS RESET */
@@ -55,6 +56,10 @@ select {
   color: inherit;
   background: none;
   border-color: transparent;
+}
+
+input:focus {
+  outline: none;
 }
 
 fieldset {
@@ -160,9 +165,13 @@ input[type='radio'] {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  column-gap: 1.6rem;
+  /* column-gap: 1.6rem; */
+
+  gap: 1.6rem;
 }
+
 .radio__input {
+  /* outline: 2px solid red; */
   width: 100%;
 }
 
@@ -177,18 +186,28 @@ input[type='radio'] {
   display: flex;
   justify-content: center;
   border-radius: 5px;
-}
-
-.radio__input input:checked + label {
-  /* UPDATE BACKGROUND COLOR */
-  background-color: var(--BTN-SELECTED);
-  color: #085c61;
+  cursor: pointer;
 }
 
 .radio__label-custom {
   background-color: #f3f9fa;
   color: #5e7a7d;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
+
+.radio__label:hover,
+.radio__label:active {
+  background-color: #9fe8df;
+  color: #085c61;
+}
+
+/* .radio__input input:checked + label {
+  background-color: var(--BTN-SELECTED);
+  color: #085c61;
+} */
+
 /* Form Summary / Reset */
 
 .form-group__summary {
@@ -226,17 +245,40 @@ input[type='radio'] {
   font-size: 2rem;
   padding: 0.5em 0;
   text-transform: uppercase;
-  /* ADD COLOR VARIABLE */
-  background-color: #26c2ae;
-  color: #085c61;
+
+  /* Inactive - Default */
+  background-color: #085c61;
+  color: #00474b;
+  /* Active State Colors */
+  /* background-color: #26c2ae;
+  color: #085c61; */
 
   border-radius: 0.5rem;
 }
 
+.form__reset_btn:hover,
+.form__reset_btn:active {
+  background-color: #9fe8df;
+}
+
 /* VALIDATION STYLING */
 
-input:invalid {
-  border: 1px solid red;
+.error-message {
+  visibility: hidden;
+  color: var(--COLOR-INVALID);
+  font-size: 1.3rem;
+  font-weight: 700;
+  position: absolute;
+  top: -50%;
+  right: 0;
+}
+
+input:not(:focus):invalid {
+  border: 2px solid var(--COLOR-INVALID);
+}
+
+input:not(:focus):invalid ~ .error-message {
+  visibility: visible;
 }
 
 /* FOOTER */
