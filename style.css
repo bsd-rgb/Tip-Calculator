@@ -202,12 +202,15 @@ input[type='radio'] {
   background-color: #9fe8df;
   color: #085c61;
 }
-
-/* .radio__input input:checked + label {
-  background-color: var(--BTN-SELECTED);
-  color: #085c61;
+/* 
+.radio__input input:checked + label {
+  background-color: #26c2ae;
+  color: #00474b;
+}
+input[type='radio']:checked + label {
+  background-color: #26c2ae;
+  color: #00474b;
 } */
-
 /* Form Summary / Reset */
 
 .form-group__summary {
