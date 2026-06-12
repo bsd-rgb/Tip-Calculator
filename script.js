@@ -13,6 +13,7 @@ billAmount.value = '';
 btnCustom.value = '';
 inputNumPeople.value = '';
 
+/** Calculates the total and displays the value */
 const calculateTotals = function () {
   const bill = Number(billAmount.value);
   const people = Number(inputNumPeople.value);
@@ -26,35 +27,48 @@ const calculateTotals = function () {
   totalValueDisplay.textContent = totalBill.toFixed(2);
 };
 
-/////// Event Handlers /////////
-
-//Calculate tip after entering num people
-inputNumPeople.addEventListener('input', function (event) {
-  calculateTotals();
-
-  btnReset.style.backgroundColor = '#26c2ae';
-  btnReset.color = '#00474b';
-});
-
-// Setting the Tip % + Visuals
-radioGroupContainer.addEventListener('click', function (e) {
+/** Resets the labels to default */
+const resetLabels = function () {
   radioLabels.forEach(l => {
     l.style.backgroundColor = '';
     l.style.color = '';
     l.value = '';
   });
+};
+/** Updates the background color and text color for the specified element */
+const updateColor = function (el, bgColor, txtColor) {
+  el.style.backgroundColor = bgColor;
+  el.style.color = txtColor;
+};
+
+/////// Event Handlers /////////
+
+/** Calculates the total after entering a value in inputNumPeople */
+inputNumPeople.addEventListener('input', function (event) {
+  calculateTotals();
+  updateColor(btnReset, '#26c2ae', '#00474b');
+});
+
+/** Set tip + visuals for selected tip amount */
+radioGroupContainer.addEventListener('click', function (e) {
+  resetLabels();
 
   if (e.target.value !== undefined) {
     tipPercentage = e.target.value / 100;
 
-    e.target.closest('.radio__label').style.backgroundColor = '#26c2ae';
-    e.target.closest('.radio__label').style.color = '#00474b';
+    const label = e.target.closest('.radio__label');
+    updateColor(label, '#26c2ae', '#00474b');
   }
-
   calculateTotals();
 });
 
-// On reset
+/** Independent listener for custom input */
+btnCustom.addEventListener('input', function (e) {
+  tipPercentage = e.target.value / 100;
+  calculateTotals();
+});
+
+/** Resets the input fields and value fields */
 btnReset.addEventListener('click', function (e) {
   e.preventDefault();
 
@@ -63,16 +77,6 @@ btnReset.addEventListener('click', function (e) {
   tipValueDisplay.textContent = '$0.00';
   totalValueDisplay.textContent = '$0.00';
 
-  radioLabels.forEach(l => {
-    l.style.backgroundColor = '';
-    l.style.color = '';
-  });
-
-  btnReset.style.backgroundColor = '#085c61';
-  btnReset.style.color = '#00474b';
-});
-
-btnCustom.addEventListener('input', function (e) {
-  tipPercentage = e.target.value / 100;
-  calculateTotals();
+  resetLabels();
+  updateColor(btnReset, '#085c61', '#00474b');
 });
