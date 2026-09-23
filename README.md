@@ -43,7 +43,7 @@ Empty:
 ### Links
 
 - Solution URL: [https://github.com/bsd-rgb/Tip-Calculator](https://github.com/bsd-rgb/Tip-Calculator)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://bsd-rgb.github.io/Tip-Calculator/](https://bsd-rgb.github.io/Tip-Calculator/)
 
 ## My process
 
