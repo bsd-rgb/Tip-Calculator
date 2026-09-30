@@ -1,62 +1,60 @@
 # Tip Calculator
 
-This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
+A responsive tip calculator built with HTML, CSS, and vanilla JavaScript. Users can enter a bill amount, select a preset or custom tip percentage, and split the total between multiple people.
+
+This project was built from a [Frontend Mentor](https://www.frontendmentor.io) design challenge. The HTML, CSS, and JavaScript implementation is my own.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Continued development](#continued-development)
-- [Author](#author)
+- [Features](#features)
+- [Built With](#built-with)
+- [Live Demo](#live-demo)
+- [Screenshots](#screenshots)
+- [What I Learned](#what-i-learned)
+- [Continued development](#continued-development)
+- [Acknowledgements](#acknowledgements)
 
-## Overview
+## Features
 
-### The challenge
+- Calculate tip amount and total cost per person
+- Supports preset and custom tip percentages
+- Updates results dynamically as inputs change
+- Validates the number of people before calculating results
+- Highlights the selected tip percentage
+- Resets all inputs and calculated values
+- Responsive layout for mobile and desktop displays
 
-Users should be able to:
+## Built with
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Calculate the correct tip and total cost of the bill per person
+- HTML
+- CSS
+- JavaScript
+- DOM events and manipulation
 
-### Screenshot
+## Live Demo
 
-**Desktop**
+[Tip Calculator](https://bsd-rgb.github.io/Tip-Calculator/)
 
-Active:
-![](./assets/images/desktop-activeState.png)
+## Screenshots
 
-Completed:
+**Desktop:**
+
 ![](./assets/images/desktop-completed.png)
-
-Empty:
-![](./assets/images/desktop-empty.png)
 
 **Mobile:**
 
 ![](./assets/images/mobile.png)
 
-### Links
+## What I Learned
 
-- Solution URL: [https://github.com/bsd-rgb/Tip-Calculator](https://github.com/bsd-rgb/Tip-Calculator)
-- Live Site URL: [https://bsd-rgb.github.io/Tip-Calculator/](https://bsd-rgb.github.io/Tip-Calculator/)
+One of the more challenging parts of this project was implementing th epreset tip selections. I used radio inputs with styled labels to create the button-like controls while retaining the behavior of a form input.
 
-## My process
+The project also gave more practice working with DOM events, input validation, and dynamic calculation.
 
-### Built with
+## Continued Development
 
-- HTML
-- CSS
-- JavaScript
+I plan to continue improving my knowledge of accessible forms and form controls, particularly when created custom interactive elements.
 
-### Continued development
+## Acknowledgements
 
-I want to continue to polish my skills with forms. While working on this project, I noticed a lot of little things I could and couldn't do with form items when it came to styling.
-
-## Author
-
-- Frontend Mentor - [@bsd-rgb](https://www.frontendmentor.io/profile/bsd-rgb)
+Design provided by [Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
